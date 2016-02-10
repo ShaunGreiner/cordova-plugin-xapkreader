@@ -122,6 +122,11 @@ c) Add the following to ``[root]/config.xml``:
  
  ``<img src="content://com.test.expansion/myfile.png">``
 
+ Keep in mind that the root level of your zip needs to be in the URL.
+ For example if your files were zipped into a "main_expansion" directory then they would be accessed via
+ 
+ ``<img src="content://com.test.expansion/main_expansion/myfile.png">``
+
 #OBB files
 
 Make sure your OBB is a STORE and uses the latest zip methods. I use 7zip, which shows "version 20" in the file properties. Some zip programs may generate zips that, when uploaded, to the Google Play Developer Console, come back as corrupt OBBs.
